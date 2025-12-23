@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glipearte - Pegue e Monte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #b21f1f;
+            --secondary: #6c63ff;
+            --light: #fef6f2;
+            --dark: #333;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+
+        /* Navigation */
+        nav {
+            background: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo { font-weight: 700; font-size: 1.5rem; color: var(--primary); }
+        
+        .nav-links { display: flex; list-style: none; }
+        .nav-links li { margin-left: 20px; }
+        .nav-links a { text-decoration: none; color: var(--dark); font-weight: 600; transition: 0.3s; }
+        .nav-links a:hover { color: var(--primary); }
+
+        /* Hero Section */
+        .hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagens/fundo.jpg') center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .btn-main {
+            background: var(--primary);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        /* Content Sections */
+        .section { padding: 60px 5%; max-width: 1200px; margin: auto; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
+        
+        .card { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .card img { width: 100%; border-radius: 10px; margin-bottom: 15px; }
+
+        footer { background: var(--dark); color: white; padding: 40px 5%; text-align: center; }
+        .social-icons img { width: 40px; margin: 10px; filter: brightness(0) invert(1); }
+        .payments img { height: 30px; margin: 5px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">GLIPEARTE</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="portifolio.html">Portfólio</a></li>
+        <li><a href="orcamento.html">Orçamentos</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>Transforme sua Festa!</h1>
+    <p>Locações exclusivas no estilo Pegue e Monte para Natal e Ano Novo.</p>
+    <a href="orcamento.html" class="btn-main">Ver Tabela de Preços</a>
+</section>
+
+<section class="section">
+    <h2>Nossos Serviços</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Kits Completos</h3>
+            <p>Bronze, Prata e Ouro para todos os tamanhos de festa.</p>
+        </div>
+        <div class="card">
+            <h3>Painéis e Mesas</h3>
+            <p>Capas personalizadas e estruturas fáceis de montar.</p>
+        </div>
+        <div class="card">
+            <h3>Balões</h3>
+            <p>Arranjos e guirlandas natalinas e de ano novo.</p>
+        </div>
+    </div>
+</section>
+
+<section id="depoimentos" class="section" style="background: #fff;">
+    <h2>O que nossos clientes dizem</h2>
+    <div class="grid">
+        <div class="card">
+            <p>"Tudo impecável e muito fácil de montar. Minha ceia ficou linda!"</p>
+            <strong>- Maria Silva</strong>
+        </div>
+        <div class="card">
+            <p>"Excelente atendimento e as peças são de muita qualidade."</p>
+            <strong>- João Pedro</strong>
+        </div>
+    </div>
+</section>
+
+<footer id="contato">
+    <h3>Entre em contato:</h3>
+    <div class="social-icons">
+        <a href="http://wa.me/5585986853750"><img src="imagens/whatts.png" alt="WhatsApp"></a>
+        <a href="http://www.instagram.com/glipearte"><img src="imagens/instagram.png" alt="Instagram"></a>
+    </div>
+    
+    <div class="payments">
+        <p>Aceitamos:</p>
+        <img src="imagens/pix.png" alt="Pix">
+        <img src="imagens/visa.png" alt="Visa">
+        <img src="imagens/mastercard.png" alt="Mastercard">
+        <img src="imagens/hipercard.png" alt="Hipercard">
+        <img src="imagens/amex.png" alt="Amex">
+    </div>
+    <p>© 2025 Glipearte - Festas incríveis começam aqui.</p>
+</footer>
+
+</body>
+</html>

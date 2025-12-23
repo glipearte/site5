@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio • Glipearte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #b21f1f; --dark: #333; --bg: #fef6f2; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background: var(--bg); color: var(--dark); }
+        
+        header { background: #fff; padding: 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .nav-btn { text-decoration: none; color: var(--primary); font-weight: 600; border: 2px solid var(--primary); padding: 8px 20px; border-radius: 20px; transition: 0.3s; }
+        .nav-btn:hover { background: var(--primary); color: #fff; }
+
+        .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+        h1 { text-align: center; color: var(--primary); margin-bottom: 40px; }
+        
+        .category-title { background: var(--primary); color: white; padding: 10px 20px; border-radius: 8px; margin: 30px 0 20px; display: inline-block; }
+        
+        .gallery-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+            gap: 20px; 
+        }
+
+        .gallery-item { 
+            background: #fff; 
+            border-radius: 15px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover { transform: translateY(-5px); }
+        .gallery-item img { width: 100%; height: 250px; object-fit: cover; display: block; }
+        .gallery-item p { padding: 15px; text-align: center; font-weight: 600; font-size: 0.9rem; }
+
+        footer { background: var(--dark); color: white; text-align: center; padding: 40px 20px; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="nav-btn">← Voltar ao Início</a>
+</header>
+
+<div class="container">
+    <h1>Nosso Portfólio de Festas</h1>
+
+    <h2 class="category-title">Painéis Redondos</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="imagens2/redondo01.png" alt="Painel Natal">
+            <p>Painel Natalino Clássico</p>
+        </div>
+        <div class="gallery-item">
+            <img src="imagens2/redondo04.png" alt="Painel Ano Novo">
+            <p>Painel Ano Novo Estrela</p>
+        </div>
+    </div>
+
+    <h2 class="category-title">Capas para Mesas</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="imagens2/mesa.png" alt="Capa Mesa">
+            <p>Capa para Uma Mesa (70x70)</p>
+        </div>
+        <div class="gallery-item">
+            <img src="imagens2/mesa2.png" alt="Capa Duas Mesas">
+            <p>Capa para Duas Mesas (70x140)</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 Glipearte - Festas incríveis começam aqui.</p>
+</footer>
+
+</body>
+</html>
